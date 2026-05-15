@@ -62,9 +62,9 @@ async fn handle_generate(Json(payload): Json<GenerateRequest>) -> impl IntoRespo
     };
 
     let client = reqwest::Client::new();
-    // Using gemini-1.5-flash as the "3.1 Flash" likely refers to a requested version or typo for 1.5 Flash
+    // Using gemini-2.5-flash as the "3.1 Flash" likely refers to a requested version or typo for 1.5 Flash
     let url = format!(
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={}",
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={}",
         api_key
     );
 
